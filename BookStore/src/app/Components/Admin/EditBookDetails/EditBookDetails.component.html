@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="edit-book">
+    <h2>Update Book</h2>
+    <hr>
+    <div class="edit-book-body">
+      <form action="" (ngSubmit)="OnSubmit()">
+        <div>
+          <label for="">Book Name:</label>
+          <input type="text" [value]="bookbyid.name"  [(ngModel)]="bookbyid.name" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div>
+          <label for="">Book Author:</label>
+          <input type="text" [value]="bookbyid.author" [(ngModel)]="bookbyid.author" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div>
+          <label for="">Book Category:</label>
+          <input type="text" [value]="bookbyid.categories" [(ngModel)]="bookbyid.categories" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div>
+          <label for="">Book Price:</label>
+          <input type="text" [value]="bookbyid.price" [(ngModel)]="bookbyid.price" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div>
+          <label for="">Book Image:</label>
+          <input class="form-control" type="file"  (change)="uploadPhoto($event)" [(ngModel)]="bookbyid.image" [ngModelOptions]="{standalone: true}">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
