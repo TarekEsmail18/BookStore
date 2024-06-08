@@ -6138,11 +6138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OWNER\\source\\repos\\BookStore\\BookStore\\BookStore.csproj",
+      "projectUniqueName": "C:\\Users\\OWNER\\Desktop\\New folder (5)\\Backend\\BookStore\\BookStore\\BookStore.csproj",
       "projectName": "BookStore",
-      "projectPath": "C:\\Users\\OWNER\\source\\repos\\BookStore\\BookStore\\BookStore.csproj",
+      "projectPath": "C:\\Users\\OWNER\\Desktop\\New folder (5)\\Backend\\BookStore\\BookStore\\BookStore.csproj",
       "packagesPath": "C:\\Users\\OWNER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OWNER\\source\\repos\\BookStore\\BookStore\\obj\\",
+      "outputPath": "C:\\Users\\OWNER\\Desktop\\New folder (5)\\Backend\\BookStore\\BookStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\OWNER\\AppData\\Roaming\\NuGet\\NuGet.Config",

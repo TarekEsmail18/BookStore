@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ioFVROAhAdT896JFmLazD/Kwds+gIodSIrB69CE1GE/LHnS84zePibnyEVym2nqIMHJfKqUsoBzNv12WJnwNRA==",
+  "dgSpecHash": "KLzK/sLyKw60bN24vMYeGp3qP1DFEh445qvrtV6bVWmLZEqQuD3UGUFcSbDzivVtJVg2yedf1ClgB7ihhetUOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\OWNER\\source\\repos\\BookStore\\BookStore\\BookStore.csproj",
+  "projectFilePath": "C:\\Users\\OWNER\\Desktop\\New folder (5)\\Backend\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OWNER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\OWNER\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",

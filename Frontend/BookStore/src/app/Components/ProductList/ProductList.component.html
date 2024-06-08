@@ -8,10 +8,9 @@
 
   <div class="inner-div">
 
-    <div  class="book-list" *ngFor="let book of BookPerPageList">
-      <div>
-        <div class="book-img" (mouseenter)="show = true" (mouseleave)="show = false" >
-          <a class="details-link" *ngIf="show" [@hoverAnimation]>Read MORE</a>
+    <div  class="book-list" *ngFor="let book of BookPerPageList; let i = index">
+        <div class="book-img" (mouseenter)="show  = i" (mouseleave)="show = -1" >
+          <a class="details-link" *ngIf="(show == i)" (click)="goToDetails(book.id)" [@hoverAnimation]>Read MORE</a> 
           <img src="{{book.image}}" alt="">
         </div>
         <div class="text-book">
@@ -19,7 +18,6 @@
           <h5>xkjclzjcz</h5>
           <div class="price">{{book.price}}</div>
         </div>
-      </div>
     </div>
 
 

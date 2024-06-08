@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
 import { Book } from 'src/app/ViewModel/Book';
 import { BookServicesService } from 'src/app/services/bookServices.service';
@@ -36,7 +37,7 @@ export class ProductListComponent implements OnInit {
 
 
   img:string = "assets/images/download.jpg";
-  show:boolean = false;
+  show:any = false;
   //count:number = 5;
   arr:number[] = [];
   active:number = 0;
@@ -49,7 +50,7 @@ export class ProductListComponent implements OnInit {
   BookPerPageList:Book[] = [];
 
 
-  constructor(private bookServices: BookServicesService) { 
+  constructor(private bookServices: BookServicesService, private router:Router) { 
     
    
   }
@@ -120,6 +121,11 @@ export class ProductListComponent implements OnInit {
     this.GetBooksPerPage();
   }
 
+
+  goToDetails(Id:any)
+  {
+    this.router.navigateByUrl('bookDetails/' + Id);
+  }
 
 
 
