@@ -10,7 +10,7 @@
 
     <div  class="book-list" *ngFor="let book of BookPerPageList; let i = index">
         <div class="book-img" (mouseenter)="show  = i" (mouseleave)="show = -1" >
-          <a class="details-link" *ngIf="(show == i)" (click)="goToDetails(book.id)" [@hoverAnimation]>Read MORE</a> 
+          <a class="details-link" *ngIf="(show === i)" (click)="goToDetails(book.id)" [@hoverAnimation]>Read MORE</a> 
           <img src="{{book.image}}" alt="">
         </div>
         <div class="text-book">
