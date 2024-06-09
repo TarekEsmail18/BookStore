@@ -30,15 +30,18 @@ export class LoginComponent implements OnInit {
   constructor(private fb: FormBuilder,private userservice: UserService,private router: Router,private location: Location,private route: ActivatedRoute) {}
 
   ngOnInit() {
-   /* if(localStorage.getItem('token') != null)
+    if(localStorage.getItem('token') != null)
     {
       this.router.navigateByUrl('/Home');
-    }*/
+    }
   }
 
 
   onSubmit(form: FormGroup)
   {
+
+    this.submitted = true
+
     if(this.loginForm.valid)
     {
       
@@ -67,6 +70,7 @@ export class LoginComponent implements OnInit {
         (err: HttpErrorResponse)=>{
           this.errorMessage = err.error;
           this.notLogged = true;
+          //this.submitted = true
           //console.log(err);
           //console.log(this.errorMessage);
         });
