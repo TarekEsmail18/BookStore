@@ -48,9 +48,9 @@ export class RegisterPageComponent implements OnInit {
 
   onSubmit(form: FormGroup)
   {
+    this.submitted = true;
     if(this.registerForm.valid)
     {
-      this.submitted = true;
       this.userData = {
         UserName: form.value.UserName,
         Email: form.value.email,
